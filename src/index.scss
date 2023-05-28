@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1210px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  .header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 45%;
+    }
+  }
+  .header-register {
+    margin-left: auto;
+    button {
+      cursor: pointer;
+      padding: 0 5px;
+    }
+    button + button {
+      margin-left: 10px;
+    }
+  }
+}
+
+//modals
+.register-form {
+  > * + * {
+    margin-top: 5px;
+  }
+  label {
+    display: block;
+    input {
+      width: 100%;
+      font-size: 17px;
+      padding: 2px 5px;
+      border-radius: 8px;
+      outline: none;
+      border-width: 1px;
+    }
+  }
+}
+//end of modals

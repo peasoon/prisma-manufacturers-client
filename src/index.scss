@@ -25,7 +25,12 @@ body {
     display: flex;
     align-items: center;
     span {
-      margin-left: 45%;
+      &:first-child {
+        margin-left: 45%;
+      }
+      + span {
+        margin-left: 20px;
+      }
     }
   }
   .header-register {
@@ -42,6 +47,22 @@ body {
 
 //modals
 .register-form {
+  > * + * {
+    margin-top: 5px;
+  }
+  label {
+    display: block;
+    input {
+      width: 100%;
+      font-size: 17px;
+      padding: 2px 5px;
+      border-radius: 8px;
+      outline: none;
+      border-width: 1px;
+    }
+  }
+}
+.login-form {
   > * + * {
     margin-top: 5px;
   }

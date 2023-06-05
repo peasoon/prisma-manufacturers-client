@@ -18,6 +18,7 @@ const baseQuery = fetchBaseQuery({
 export const api = createApi({
   reducerPath: "splitApi",
   baseQuery: baseQuery,
+  tagTypes:['Product'],
   refetchOnMountOrArgChange: true,
   endpoints: () => ({}),
 });

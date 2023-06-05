@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import ProductsPage from "../pages/ProductsPage";
 import { Navigate } from "react-router-dom";
 import ManufacturerPage from "../pages/ManufacturerPage";
+import SingleProductPage from "../pages/SIngleProductPage";
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/products/:id",
-        element: <span>Страница товара</span>,
+        element: <SingleProductPage />,
       },
       {
         path: "/users/:id",

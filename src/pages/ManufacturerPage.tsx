@@ -33,7 +33,6 @@ const ManufacturerPage: React.FunctionComponent<IManufacturerPageProps> = (
     <main>
       Поставщик {params.id}
       {isLoading && <span>Загрузка...</span>}
-      {data && JSON.stringify(data)}
       {data && (
         <Table
           loading={isLoading}

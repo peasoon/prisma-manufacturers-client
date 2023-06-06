@@ -19,6 +19,18 @@ body {
   margin: 0 auto;
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.main-container {
+  width: 100%;
+  flex-grow: 1;
+}
+
 .header {
   .header-container {
     position: relative;

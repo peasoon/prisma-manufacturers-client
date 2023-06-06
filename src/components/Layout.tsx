@@ -11,7 +11,7 @@ const Layout: React.FunctionComponent<
   return (
     <>
       <Header />
-      <div className="container">
+      <div className="container main-container">
         <Outlet />
       </div>
       <Footer />
